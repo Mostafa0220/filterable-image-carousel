@@ -14,7 +14,7 @@ filtered response in XML format.
 
 3. UniteTest:
 
-3.1 `<Test ConvertCsv Command>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/tests/Feature/ConvertCsvTest.php>
+3.1 `<Test CLI ConvertCsv Command>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/tests/Feature/ConvertCsvTest.php>
 
 3.2 `<Test Rest Api>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/tests/Feature/RestApiTest.php>
 
@@ -24,18 +24,26 @@ filtered response in XML format.
 2. Laravel Framework  6.20.32
 
 # Getting started
-1. `git clone https://github.com/Mostafa0220/filterable-image-carousel.git && cd filterable-image-carousel`
-2. `composer install`
-3. `php artisan storage:link`
-4. `php artisan serve`
+```sh
+git clone https://github.com/Mostafa0220/filterable-image-carousel.git && cd filterable-image-carousel
+composer install
+php artisan storage:link
+php artisan serve
+```
+
 
 # CLI command to convert the input CSV file to a JSON and XML file.:
-1. You could use the following command to upload the csv file `php artisan convert:csv`
+1. You could use the following command to upload the csv file 
+```sh
+php artisan convert:csv
+```
 2. The console will prompt for the full url of your csv file you could enter example url : https://sacoor.mostafa.website/csv/1.csv
 3. if the csv's url is not valide a validation error will be displayed at the console
 4. if csv file is imported and converted with no error a successfull message will displayed "2 files created!".
 5. the code will covert the imported csv data to xml & json format and store the formatted data at the following paths
+
 5.1 "/storage/public/items.json". 
+
 5.2 "/storage/public/items.xml".
 
 ![CLI Command Success](http://mostafa.website/screenshot/cli-success.png)
@@ -50,13 +58,19 @@ filtered response in XML format.
 # REST API to serve the contents of the JSON file.:
 ##### GET http://localhost:8000/api/items
  Rest API to List all items without filter. Serving a response in XML format.
+
 ![Rest API 2](http://mostafa.website/screenshot/rest-api2.png)
 
 # REST API 3 to serve the contents of the JSON file.:
  ##### GET http://localhost:8000/api/items?name=Suit
  Rest API to filterable by name only. Serving a filtered response in XML format.
+
 ![Rest API 3](http://mostafa.website/screenshot/rest-api3.png)
 
 # TestCase of code:
- Running Tests. To run tests using PHP unit the Application, navigate to project root directory and run `./vendor/bin/phpunit` command
+ Running Tests. To run tests using PHP unit the Application, navigate to project root directory and run the following command
+ ```sh
+ ./vendor/bin/phpunit
+ ```
+
 ![Rest API 3](http://mostafa.website/screenshot/test.png)
