@@ -1,5 +1,8 @@
 # REST API creating a filterable image
 A simple REST API for creating a filterable image carousel.
+1. CLI command to convert the input CSV file  to a JSON and XML file store it "/storage/public/items.json" & "/storage/public/items.xml" .
+2. REST API to serve the contents of the JSON file filterable by name and pvp. Serving a
+filtered response in XML format.
 # Technologies
 1. PHP Version 7.2
 2. Laravel Framework  6.20.32
@@ -7,10 +10,8 @@ A simple REST API for creating a filterable image carousel.
 # Getting started
 1. `git clone https://github.com/Mostafa0220/filterable-image-carousel.git && cd filterable-image-carousel`
 2. `composer install`
-3. `cp .env.example .env`
-4. `php artisan key:generate`
-5. `php artisan storage:link`
-6. `php artisan serve`
+3. `php artisan storage:link`
+4. `php artisan serve`
 
 # CLI command to convert the input CSV file to a JSON and XML file.:
 1. You could use the following command to upload the csv file `php artisan convert:csv`
