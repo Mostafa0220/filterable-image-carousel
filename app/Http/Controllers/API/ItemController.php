@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
 use Validator;
 use Illuminate\Support\Facades\Storage;
+use SoapBox\Formatter\Formatter;
 
 class ItemController extends BaseController
 {
@@ -30,8 +31,8 @@ class ItemController extends BaseController
         $filtered->all();
 
 
-
-        return response($filtered, 200, ['Content-Type' => 'application/xml']);
+        $formatter = Formatter::make($filtered, Formatter::ARR)->toXml();
+        return response($formatter, 200, ['Content-Type' => 'application/xml']);
 
 
     }

@@ -29,14 +29,14 @@ filtered response in XML format.
 # REST API 1 to serve the contents of the JSON file.:
 GET http://localhost:8000/api/items?name=Suit&pvp=500
  Rest API to filterable by name and pvp. Serving a filtered response in XML format.
-![Rest API 1](http://mostafa.website/screenshot/api1.png)
+![Rest API 1](http://mostafa.website/screenshot/rest-api1.png)
 
 # REST API to serve the contents of the JSON file.:
 GET http://localhost:8000/api/items
  Rest API to List all items without filter. Serving a response in XML format.
-![Rest API 2](http://mostafa.website/screenshot/api2.png)
+![Rest API 2](http://mostafa.website/screenshot/rest-api2.png)
 
 # REST API 3 to serve the contents of the JSON file.:
  GET http://localhost:8000/api/items?name=Suit
  Rest API to filterable by name only. Serving a filtered response in XML format.
-![Rest API 3](http://mostafa.website/screenshot/api3.png)
+![Rest API 3](http://mostafa.website/screenshot/rest-api3.png)
