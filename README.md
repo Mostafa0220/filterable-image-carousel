@@ -1,11 +1,15 @@
 # REST API creating a filterable image
 A simple REST API for creating a filterable image carousel.
 1. CLI command to convert the input CSV file  to a JSON and XML file store it "/storage/public/items.json" & "/storage/public/items.xml".
-Source Code at [app/Console/Commands/ConvertCsv.php] (https://github.com/Mostafa0220/filterable-image-carousel/blob/master/app/Console/Commands/ConvertCsv.php).
+
+`<SourceCode>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/app/Console/Commands/ConvertCsv.php>
 
 2. REST API to serve the contents of the JSON file filterable by name and pvp. Serving a
 filtered response in XML format.
-Source Code at [app/Http/Controllers/API/ItemController.php] (https://github.com/Mostafa0220/filterable-image-carousel/blob/master/app/Http/Controllers/API/ItemController.php).
+
+`<SourceCode>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/app/Http/Controllers/API/ItemController.php>
+
+
 
 # Technologies
 1. PHP Version 7.2
@@ -19,7 +23,7 @@ Source Code at [app/Http/Controllers/API/ItemController.php] (https://github.com
 
 # CLI command to convert the input CSV file to a JSON and XML file.:
 1. You could use the following command to upload the csv file `php artisan convert:csv`
-2. The console will prompt for the full url of ur csv file you could enter example url : http://localhost:8000/csv/1.csv
+2. The console will prompt for the full url of your csv file you could enter example url : http://localhost:8000/csv/1.csv
 3. if the csv's url is not valide a validation error will be displayed at the console
 4. if csv file is imported and converted with no error a successfull message will displayed "2 files created!".
 5. the code will covert the imported csv data to xml & json format and store the formatted data at the following paths
@@ -31,16 +35,16 @@ Source Code at [app/Http/Controllers/API/ItemController.php] (https://github.com
 ![CLI Command Fail](http://mostafa.website/screenshot/cli-fail.png)
 
 # REST API 1 to serve the contents of the JSON file.:
-GET http://localhost:8000/api/items?name=Suit&pvp=500
+##### GET http://localhost:8000/api/items?name=Suit&pvp=500
  Rest API to filterable by name and pvp. Serving a filtered response in XML format.
 ![Rest API 1](http://mostafa.website/screenshot/rest-api1.png)
 
 # REST API to serve the contents of the JSON file.:
-GET http://localhost:8000/api/items
+##### GET http://localhost:8000/api/items
  Rest API to List all items without filter. Serving a response in XML format.
 ![Rest API 2](http://mostafa.website/screenshot/rest-api2.png)
 
 # REST API 3 to serve the contents of the JSON file.:
- GET http://localhost:8000/api/items?name=Suit
+ ##### GET http://localhost:8000/api/items?name=Suit
  Rest API to filterable by name only. Serving a filtered response in XML format.
 ![Rest API 3](http://mostafa.website/screenshot/rest-api3.png)
