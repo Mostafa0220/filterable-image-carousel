@@ -10,6 +10,9 @@ filtered response in XML format.
 `<SourceCode>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/app/Http/Controllers/API/ItemController.php>
 
 
+3. UniteTest:
+3.1 `<Test ConvertCsv Command>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/tests/Feature/ConvertCsvTest.php>
+3.2 `<Test Rest Api>` : <https://github.com/Mostafa0220/filterable-image-carousel/blob/master/tests/Feature/RestApiTest.php>
 
 # Technologies
 1. PHP Version 7.2
@@ -48,3 +51,7 @@ filtered response in XML format.
  ##### GET http://localhost:8000/api/items?name=Suit
  Rest API to filterable by name only. Serving a filtered response in XML format.
 ![Rest API 3](http://mostafa.website/screenshot/rest-api3.png)
+
+# TestCase of code:
+ Running Tests. To run tests using PHP unit the Application, navigate to project root directory and run `./vendor/bin/phpunit` command
+![Rest API 3](http://mostafa.website/screenshot/test.png)
