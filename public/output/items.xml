@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml><item><id>1</id><name>Suit</name><sku>S1612</sku><pvp>2000</pvp><discount>10</discount></item><item><id>2</id><name>Shirt</name><sku>Sh1613</sku><pvp>300</pvp><discount>5</discount></item><item><id>3</id><name>Trouser</name><sku>T1614</sku><pvp>450</pvp><discount>30</discount></item><item><id>4</id><name>Jacket</name><sku>J1615</sku><pvp>800</pvp><discount>60</discount></item></xml>
