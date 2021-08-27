@@ -31,7 +31,7 @@ filtered response in XML format.
 
 # CLI command to convert the input CSV file to a JSON and XML file.:
 1. You could use the following command to upload the csv file `php artisan convert:csv`
-2. The console will prompt for the full url of your csv file you could enter example url : http://localhost:8000/csv/1.csv
+2. The console will prompt for the full url of your csv file you could enter example url : https://sacoor.mostafa.website/csv/1.csv
 3. if the csv's url is not valide a validation error will be displayed at the console
 4. if csv file is imported and converted with no error a successfull message will displayed "2 files created!".
 5. the code will covert the imported csv data to xml & json format and store the formatted data at the following paths
