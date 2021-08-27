@@ -22,21 +22,21 @@ filtered response in XML format.
 5.1 "/storage/public/items.json". 
 5.2 "/storage/public/items.xml".
 
-![CLI Command Success](https://www.screencast.com/t/2x26nnZexG)
+![CLI Command Success](http://mostafa.website/screenshot/cli-success.png)
 
-![CLI Command Fail](https://www.screencast.com/t/M3zFBfEOt)
+![CLI Command Fail](http://mostafa.website/screenshot/cli-fail.png)
 
 # REST API 1 to serve the contents of the JSON file.:
 GET http://localhost:8000/api/items?name=Suit&pvp=500
  Rest API to filterable by name and pvp. Serving a filtered response in XML format.
-![Rest API 1](https://www.screencast.com/t/xeKZGFJmHHdJ)
+![Rest API 1](http://mostafa.website/screenshot/api1.png)
 
 # REST API to serve the contents of the JSON file.:
 GET http://localhost:8000/api/items
  Rest API to List all items without filter. Serving a response in XML format.
-![Rest API 2](https://www.screencast.com/t/2jo2T6KJR)
+![Rest API 2](http://mostafa.website/screenshot/api2.png)
 
 # REST API 3 to serve the contents of the JSON file.:
  GET http://localhost:8000/api/items?name=Suit
  Rest API to filterable by name only. Serving a filtered response in XML format.
-![Rest API 3](https://www.screencast.com/t/gcokVJIt)
+![Rest API 3](http://mostafa.website/screenshot/api3.png)
